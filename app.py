@@ -20,9 +20,9 @@ models_path = project / "Models"
 
 @st.cache_resource
 def load_models():
-    with open(models_path / "pothole_ml_model.pkl", "rb") as f:
+    with open(models_path / ""/mount/src/Models/pothole_ml_model.pkl"", "rb") as f:
         ml_model = pickle.load(f)
-    with open(models_path / "pothole_nn_model.pkl", "rb") as f:
+    with open(models_path / ""/mount/src/Models/pothole_ml_model.pkl"", "rb") as f:
         nn_model = pickle.load(f)
     return ml_model, nn_model
 
